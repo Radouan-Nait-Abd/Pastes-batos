@@ -6,12 +6,12 @@
         <title>Doughts Simulator for batos</title>
         <style>
             :root {
-                --bg: #dca46c;
-                --btnColor: #7c543c;
+                --bg: #bed4d4;
+                --btnColor: #b17b39;
                 --Color: #000;
-                --Border: 1px solid #000;
+                --Border: 1px solid #b17b39;
                 --Padding: 20px;
-                --FontSize: 1rem;
+                --FontSize: 1.1rem;
                 --Main-width: 90%;
             }
             * {
@@ -28,7 +28,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                background-color: #7c543c;
+                background-color: var(--bg);
                 margin: 0px 5px;
                 
             }
@@ -38,7 +38,7 @@
             }
             header .name {
                 margin-left: 20px;
-                color: #f8f8ff;
+                color: var(--btnColor);
                 font-size: 1.1rem;
                 font-weight: bold;
             }
@@ -91,7 +91,7 @@
             }
         
             main .Input:focus {
-                box-shadow: 0px 0px 1px 0.1px #4c240e;
+                box-shadow: 0px 0px 1px 0.1px var(--btnColor);
                 outline: none;
                 border: 1px solid var(--btnColor);
             }
@@ -114,10 +114,14 @@
                 flex-direction: column;
                 align-items: center;
             }
+     
+            label {
+              color: var(--btnColor);
+            }
 
             button {
                 text-align: center;
-                background-color: var(--btnColor);
+                background-color: #e85310;
                 color: #fff;
                 padding: 8px;
                 width: var(--Main-width);
@@ -171,11 +175,11 @@
             main .container .Final-result #ol-result ol li {
                 border-radius: 5px;
                 margin: 10px;
-                color: var(--Color);
+                color: var(--btnColor);
                 text-align: center;
             }
             select {
-                border: 1px solid var(--Color);
+                border: var(--Border);
                 outline: none;
                 
             }
@@ -212,7 +216,7 @@
 
             #nameOfDough {
                 text-align: center;
-                color: var(--Color);
+                color: var(--btnColor);
             }
             #last-hr {
                 margin-top: 0;
@@ -223,8 +227,8 @@
             }
 
             ol li.show {
-                border: 1px solid #4c240e;
                 padding: 5px;
+                border: 1px solid var(--btnColor);
                 text-align: center;
                 list-style-type: numeric;
             }
@@ -252,8 +256,8 @@
                 position: absolute;
                 padding: 7px;
                 top: 120px;
-                background-color: #eee;
-                color: var(--btnColor);
+                background-color: var(--btnColor);
+                color: #fff;
                 box-shadow: 0px 0px 1px 0.5px;
                 transform: translateY(-200px);
                 transition: all 0.4s 0.01s linear;
@@ -268,9 +272,6 @@
                 background-color: var(--bg)
             }
             
-            body {
-                background: var(--bg);
-            }
             input {
                 color: var(--btnColor);
             }
@@ -280,7 +281,7 @@
         <header>
             <div class="name">Dough Simulator for batos</div>
             <a href="http://maisonserraj.ma"
-                ><img src="le-paradis-logo.webp" alt="Logo"
+                ><img src="logo.webp" alt="Logo"
             /></a>
         </header>
         <hr id="header-hr" />
